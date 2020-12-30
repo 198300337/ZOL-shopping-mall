@@ -1,0 +1,194 @@
+//顶部登陆注册部分
+.loginBar-parent {
+    height: 30px;
+    line-height: 30px;
+    background: #f6f6f6;
+    .loginBar {
+        height: 30px;
+        line-height: 30px;
+        background: #f6f6f6;
+        .l {
+            float: left;
+        }
+        .r {
+            float: right;
+        }
+        a {
+            font-size: 12px;
+            color: #474747;
+            vertical-align: middle;
+        }
+        a:hover {
+            color: #FC002D;
+        }
+        span {
+            font-size: 0;
+            margin: 0 10px;
+            color: #d3ccd3;
+            display: inline-block;
+            height: 10px;
+            width: 1px;
+            background: #d3ccd3;
+            vertical-align: middle;
+        }
+    }
+}
+
+//log搜索
+.header-parent {
+    height: 112px;
+    background: #fff;
+    .header {
+        height: 112px;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        #logo {
+            width: 329px;
+            height: 58px;
+            float: left;
+            margin-top: 32px;
+            margin-right: 15px;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .search {
+            width: 600px;
+            height: 58px;
+            float: left;
+            margin: 30px 0 0 80px;
+            .search-input {
+                width: 600px;
+                height: 38px;
+                border: 2px solid #fd4165;
+                border-radius: 40px;
+                -webkit-border-radius: 40px;
+                -moz-border-radius: 40px;
+                -ms-border-radius: 40px;
+                -o-border-radius: 40px;
+                position: relative;
+            }
+        }
+        .qrcode {
+            width: 80px;
+            height: 80px;
+            float: left;
+        }
+    }
+}
+
+//导航
+.nav-parent {
+    height: 35px;
+    .nav {
+        height: 35px;
+        background-color: cadetblue;
+    }
+}
+
+//分类 轮播
+.content-parent {
+    height: 400px;
+    .content {
+        height: 400px;
+        background-color: burlywood;
+    }
+}
+
+//热门采购
+.hot-parent {
+    height: 341px;
+    .hot {
+        height: 341px;
+        background-color: aqua;
+    }
+}
+
+//微软广告
+.wrbanner-parent {
+    height: 110px;
+    .wrbanner {
+        height: 110px;
+        background-color: darkolivegreen;
+    }
+}
+
+//办公设备/办公耗材
+.work-parent {
+    height: 565px;
+    .work {
+        height: 565px;
+        background-color: blanchedalmond;
+    }
+}
+
+//电脑/数码
+.numericalcode-parent {
+    height: 565px;
+    .numericalcode {
+        height: 565px;
+        background-color: aqua;
+    }
+}
+
+//办公家电
+.appliance-parent {
+    height: 565px;
+    .appliance {
+        height: 565px;
+        background-color: deepskyblue;
+    }
+}
+
+//手机/摄影
+.camera-parent {
+    height: 565px;
+    .camera {
+        height: 565px;
+        background-color: darkkhaki;
+    }
+}
+
+//服务器/网络
+.server-parent {
+    height: 565px;
+    .server {
+        height: 565px;
+        background-color: blueviolet;
+    }
+}
+
+//汽车周边
+.automobile-parent {
+    height: 565px;
+    .automobile {
+        height: 565px;
+        background-color: coral;
+    }
+}
+
+//政府采购电商平台
+.governmentprocurement-parent {
+    height: 355px;
+    .governmentprocurement {
+        height: 355px;
+        background-color: darkolivegreen;
+    }
+}
+
+//尾部栏
+.footer-parent {
+    height: 140px;
+    .footer {
+        height: 140px;
+        background-color: #666;
+    }
+}
