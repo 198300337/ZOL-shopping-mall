@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/login.js"></script>
     <style>
         body {
             background-color: #FFF;
@@ -15,7 +17,7 @@
 </head>
 
 <body>
-    <!-- 顶部登陆注册部分 -->
+    <!-- 顶部登陆部分 -->
     <div class="loginBar-parent">
         <div class="loginBar public">
             <div class="l">
@@ -30,9 +32,9 @@
                 <a href="">供应商入驻</a>
             </div>
             <div class="r">
-                <a href="">登录</a>
+                <a href="login.html">登录</a>
                 <span>|</span>
-                <a href="">注册</a>
+                <a href="register.html">注册</a>
             </div>
         </div>
     </div>
@@ -50,12 +52,12 @@
         <div class="banner public">
             <!-- 会员登陆 -->
             <div class="vip_login">
-                <p class="login_top"><strong>会员登录</strong><span>没有账号？ <a href="">立即注册</a></span></p>
-                <div class="ue"><i><img src="../img/dh.png" alt=""></i><input type="text" name="" id="" placeholder="请输入手机号"></div>
-                <div class="pa"><i><img src="../img/mm.png" alt=""></i><input type="text" placeholder="密码"></div>
-                <input type="button" value="登  录">
+                <p class="login_top"><strong>会员登录</strong><span>没有账号？ <a href="register.html">立即注册</a></span></p>
+                <div class="ue username"><i><img src="../img/dh.png" alt=""></i><input type="text" name="" id="" placeholder="请输入手机号"></div>
+                <div class="pa password"><i><img src="../img/mm.png" alt=""></i><input type="text" placeholder="密码"></div>
+                <input type="button" value="登  录" class="btn">
                 <div class="wj">
-                    <a href="">忘记密码</a>
+                    <a href="register.html">忘记密码</a>
                 </div>
             </div>
         </div>

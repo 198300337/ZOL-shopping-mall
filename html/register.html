@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/register.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/register.js"></script>
     <style>
         body {
             background-color: #fff;
@@ -31,9 +33,9 @@
                 <a href="">供应商入驻</a>
             </div>
             <div class="r">
-                <a href="">登录</a>
+                <a href="login.html">登录</a>
                 <span>|</span>
-                <a href="">注册</a>
+                <a href="register.html">注册</a>
             </div>
         </div>
     </div>
@@ -49,11 +51,11 @@
     <!-- 注册 -->
     <div class="register">
         <div><span>注册类型:</span>&nbsp;&nbsp;&nbsp;&nbsp;<strong class="aa">个人注册</strong><strong>企业注册</strong></div>
-        <div><span>注册号码:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请输入账号"></div>
-        <div><span>登陆密码:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请输入密码"></div>
-        <div><span>确认密码:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请确认密码"></div>
-        <div class="an"><input type="button" value="提交"></div>
-        <i><a href='../html/login.html'>已有帐号登录</a></i>
+        <div><span>注册号码:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请输入账号" class="username"></div>
+        <div><span>登陆密码:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请输入密码" class="password"></div>
+        <div><span>确认密码:</span>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请确认密码" class="p1p"></div>
+        <div class="an"><input type="button" value="提交" class="btn"></div>
+        <i><a href='login.html'>已有帐号登录</a></i>
     </div>
     <!-- 尾部栏 -->
     <div class="footer-parent">

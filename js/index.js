@@ -7,14 +7,11 @@ window.onload = function() {
             });
         }),
         $(function() {
-            var classify = $('.content .gather li');
-            // console.log(classify);
-            $.each(classify, function(i, obj) {
-                $(obj).hover(function() {
-                    $('.content .gather .abs').css({ 'display': 'block', 'z-index': '6' })
-                }, function() {
-                    $('.content .gather .abs').css({ 'display': 'none' })
-                });
-            });
+
+            $('.content ul').hover(function() {
+                $('.content ul .abs').css({ 'display': 'block' })
+            }, function() {
+                $('.content ul .abs').css({ 'display': 'none' })
+            })
         })
 }
