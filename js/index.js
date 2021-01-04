@@ -11,8 +11,10 @@ window.onload = function() {
             // console.log(classify);
             $.each(classify, function(i, obj) {
                 $(obj).hover(function() {
-                    $('.content .gather .abs').css({ 'display': 'bloak' })
-                })
+                    $('.content .gather .abs').css({ 'display': 'block', 'z-index': '6' })
+                }, function() {
+                    $('.content .gather .abs').css({ 'display': 'none' })
+                });
             });
         })
 }
