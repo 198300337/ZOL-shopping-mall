@@ -13,5 +13,11 @@ window.onload = function() {
             }, function() {
                 $('.content ul .abs').css({ 'display': 'none' })
             })
+        }),
+        $(function() {
+            $('.hot input[type=button]').click(function() {
+                alert('跳转列表页')
+                $(location).attr('href', '../html/list.html')
+            })
         })
-}
+};
