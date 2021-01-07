@@ -1,4 +1,8 @@
 //顶部登陆注册部分
+body {
+    position: relative;
+}
+
 .loginBar-parent {
     height: 30px;
     line-height: 30px;
@@ -328,7 +332,7 @@
         }
         input {
             display: inline-block;
-            width: 30px;
+            width: 150px;
             height: 32px;
             margin: 0 5px;
             border: 1px solid #ddd;
@@ -345,6 +349,23 @@
             line-height: 32px;
             font-weight: 600;
             border: 1px solid #ddd;
+        }
+        #bigArea {
+            // display: none;
+            position: absolute;
+            left: 4550px;
+            top: -1px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid #cecece;
+            overflow: hidden;
+            z-index: 99999;
+        }
+        #bigArea img {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            z-index: 999;
         }
     }
     button {

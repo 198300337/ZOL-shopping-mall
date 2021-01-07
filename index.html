@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/6.0.0/swiper-bundle.min.css" rel="stylesheet">
     <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/6.0.0/swiper-bundle.min.js"></script>
+    <script src="js/axios.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 
 <body>
+
     <!-- 顶部登陆注册部分 -->
     <div class="loginBar-parent">
         <div class="loginBar public">
+            <div class="lr"></div>
             <div class="l">
                 <a href="">中关村在线</a>
                 <span>|</span>
@@ -62,7 +65,8 @@
                 </div>
             </div>
             <div class="shopping">
-                <a href=""><img src="img/sho.png" alt="">我的购物车</a>
+                <span></span>
+                <a href="html/trolley.html"><img src="img/sho.png" alt="">我的购物车</a>
             </div>
             <div class="qrcode"><img src="img/ia_100000000.png" alt=""></div>
         </div>
@@ -227,10 +231,11 @@
                         <a href="">会员登陆</a>
                     </p>
                     <div class="vip">
-                        <input type="text" placeholder="手机/邮箱/用户名">
-                        <input type="text" placeholder="密码">
-                        <input type="button" value="登录">
+                        <input type="text" placeholder="手机/邮箱/用户名" id="username">
+                        <input type="text" placeholder="密码" id="password">
+                        <input type="button" value="登录" id="btn">
                     </div>
+                    <div class="vipii vip"></div>
                     <p class="vip_bottom">
                         <span class="l-left">忘记密码?</span>
                         <span class="r-right">注册</span>
@@ -258,7 +263,7 @@
     <span></span>
     <!-- 热门采购 -->
     <div class="hot-parent">
-        <div class="hot public">
+        <div class="hot public louti">
             <p>
                 <span class="ht1">热门采购</span>
                 <span class="ht2">换一换</span>
@@ -304,17 +309,30 @@
             </ul>
         </div>
     </div>
-
+    <!-- 楼梯 -->
+    <div id="stairs">
+        <ul>
+            <li>1F<span>热门采购</span></li>
+            <li>2F<span>办公设备</span></li>
+            <li>3F<span>电脑数码</span></li>
+            <li>4F<span>办公家电</span></li>
+            <li>5F<span>手机摄影</span></li>
+            <li>6F<span>服务网络</span></li>
+            <li>7F<span>汽车周边</span></li>
+            <li>8F<span>政府采购</span></li>
+            <li>TOP</li>
+        </ul>
+    </div>
     <!-- 微软广告 -->
     <div class="wrbanner-parent">
-        <div class="wrbanner public">
+        <div class="wrbanner public louti">
             <a href=""><img src="img/ia_100000020.jpg" alt=""></a>
         </div>
     </div>
 
     <!-- 办公设备/办公耗材 -->
     <div class="work-parent">
-        <div class="work public">
+        <div class="work public louti">
             <p>
                 <span class="ht1">办公设备/办公耗材</span>
                 <span class="ht2">办公打印  考勤门禁系统  投影  监控</span>
@@ -389,7 +407,7 @@
 
     <!-- 电脑/数码 -->
     <div class="numericalcode-parent">
-        <div class="numericalcode public">
+        <div class="numericalcode public louti">
             <p>
                 <span class="ht1">电脑/数码</span>
                 <span class="ht2">台式整机  笔记本  数码产品</span>
@@ -464,7 +482,7 @@
 
     <!-- 办公家电 -->
     <div class="appliance-parent">
-        <div class="appliance public">
+        <div class="appliance public louti">
             <p>
                 <span class="ht1">办公家电</span>
                 <span class="ht2">大家电  厨卫电器  厨房小家电  生活家电</span>
@@ -539,7 +557,7 @@
 
     <!-- 手机/摄影 -->
     <div class="camera-parent">
-        <div class="camera public">
+        <div class="camera public louti">
             <p>
                 <span class="ht1">手机/摄影</span>
                 <span class="ht2">手机  通讯产品  数码相机  数码谁相机</span>
@@ -614,7 +632,7 @@
 
     <!-- 服务器/网络 -->
     <div class="server-parent">
-        <div class="server public">
+        <div class="server public louti">
             <p>
                 <span class="ht1">服务器/网络</span>
                 <span class="ht2">服务器  网络  无线  布线</span>
@@ -689,7 +707,7 @@
 
     <!-- 汽车周边 -->
     <div class="automobile-parent">
-        <div class="automobile public">
+        <div class="automobile public louti">
             <p>
                 <span class="ht1">汽车周边</span>
                 <span class="ht2">汽车电子  电动车  汽车外饰  美容养护</span>
@@ -764,7 +782,7 @@
 
     <!-- 政府采购电商平台 -->
     <div class="governmentprocurement-parent">
-        <div class="governmentprocurement public">
+        <div class="governmentprocurement public louti">
             <p>
                 <span class="ht1">政府电商采购平台</span>
                 <span class="ht2">更多></span>
@@ -831,6 +849,7 @@
             <div class="copy">京ICP证150096号 京ICP备14061128号 京公网安备11010802020026号 网络文化经营许可证京网文[2016]1631-199 增值电信业务经营许可证：京B2-20200543</div>
         </div>
     </div>
+
 </body>
 
 </html>

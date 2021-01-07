@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 //顶部登陆注册部分
 .loginBar-parent {
     height: 30px;
@@ -8,10 +12,14 @@
         line-height: 30px;
         background: #f6f6f6;
         box-sizing: border-box;
+        position: relative;
         .l {
             float: left;
         }
         .r {
+            float: right;
+        }
+        .lr {
             float: right;
         }
         a {
@@ -153,6 +161,20 @@
             right: 100px;
             line-height: 36px;
             vertical-align: middle;
+            span {
+                display: block;
+                position: absolute;
+                left: 25px;
+                top: 2px;
+                min-width: 14px;
+                height: 14px;
+                background: red;
+                line-height: 14px;
+                text-align: center;
+                border-radius: 14px;
+                color: #fff;
+                padding: 1px 3px;
+            }
             img {
                 display: inline-block;
                 width: 24px;
@@ -484,6 +506,9 @@
                         cursor: pointer;
                         outline: none;
                     }
+                }
+                .vipii {
+                    line-height: 126px;
                 }
                 .vip_bottom {
                     margin-top: 15px;
@@ -1441,6 +1466,53 @@
             margin-top: 10px;
             color: #999;
             font-size: 12px;
+        }
+    }
+}
+
+#stairs {
+    display: none;
+    position: fixed;
+    right: 30px;
+    top: 200px;
+    width: 70px;
+    height: 500px;
+    // background-color: red;
+    border: 1px solid red;
+    ul {
+        display: block;
+        width: 100%;
+        height: 100%;
+        li {
+            display: block;
+            width: 100%;
+            height: 55px;
+            border-bottom: 1px solid #666;
+            text-align: center;
+            line-height: 55px;
+            color: #333333;
+            position: relative;
+            span {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 55px;
+                text-align: center;
+                line-height: 55px;
+                background: red;
+                color: white;
+            }
+        }
+        li:hover span,
+        li.hover span {
+            display: block;
+        }
+        li:last-child {
+            background: red;
+            color: white;
+            border-bottom: none;
         }
     }
 }

@@ -29,10 +29,9 @@ window.onload = function() {
             let pprice = oInput[1].value;
             let pdesc = oInput[2].value;
             let pimg = oInput[3].value;
-            let uid = localStorage.getItem("uid");
+            let uid = localStorage.getItem('uid');
             let token = localStorage.getItem("token");
             let url = 'http://jx.xuzhixiang.top/ap/api/goods/goods-add.php';
-
             let params = { pname, pprice, pdesc, pimg, uid };
             axios.get(url, { params }).then(res => {
                 if (res.data.code === 1) {

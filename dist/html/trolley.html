@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/trolley.css">
+    <script src="../js/axios.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="../js/trolley.js"></script>
+
 </head>
 
 <body>
@@ -65,6 +69,51 @@
     </div>
 
     <!-- 购物车商品 -->
+    <div class="goods-parent">
+        <div class="goods public">
+            <h3>全部商品 <span class="zj"></span></h3>
+            <div class="newsa"> &nbsp;&nbsp;&nbsp;全选
+                <input type="checkbox" class="checkall">
+                <span class="o1">商品信息</span>
+                <span class="o2">操作</span>
+                <span class="o3">金额</span>
+                <span class="o4">数量</span>
+                <span class="o5">单价</span>
+            </div>
+            <div class="articlea">
+                <!-- <div class="list">
+                    <img src="https://mercrt-fd.zol-img.com.cn/t_s800x800f/g6/M00/00/03/ChMkKl_lwLKID49gAAILIOS9hUYAAHTCwP6UpkAAgs4812.jpg" alt="">
+                    <span class="pdesc">清华同方（THTF）超越E500-82887 I5-9500/8G/128G/2G独显/WIN10/23.8英寸</span>
+                    <span class="pprice">6542</span>
+                    <span class="jj"><a href="javascript:;" class="subtract" >-</a><input type="text" class="inpu" value="1" readonly><a href="javascript:;" class="plus">+</a></span>
+                    <span class="dzj"></span>
+                    <button>删除</button>
+                </div> -->
+            </div>
+            <!-- 尾部结算 -->
+            <div class="close-parent">
+                <div class="close public">
+                    <div class="cleft"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAnElEQVQokeXSvQkCQRDF8d+dmogKdqAF2IJYgbmpmdiIlmIk2IFdGIgNmAgaHiqHe7DcB5r7YNg3s+8PE0ySmWjQBS2M8CpH2ujjXsOOw1uBMEixCZ/lEoFxnbHKwXUIJFHNIj8PKxf9Cdu0ssRH+8gf8CwHmsCm+e+BJv0zGF/SsS6Qn1yhDnqhmWIY/CLyD2QxuMMN3S8bXrGEN+0wHGA5sFkaAAAAAElFTkSuQmCC"
+                            alt=""> &nbsp;清空购物车
+                    </div>
+                    <div class="settle">去结算</div>
+                    <div class="price">已选商品<span id="pidid"></span>件商品 &nbsp;&nbsp;&nbsp;合计 (不含计费) : <span class="zj"></span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 尾部栏 -->
+    <div class="footer-parent">
+        <div class="footer public">
+            <div class="qr"><img src="../img/ia_100000000.png" alt=""></div>
+            <div class="concat"><img src="../img/kf.png" alt=""><span class="rxdh">热线电话</span><span class="dh">400-688-1999</span></div>
+            <div class="copy">©2021 北京知行锐景科技有限公司 / 北京中在云商科技有限公司 版权备案单位/子公司</div>
+            <div class="copy">京ICP证150096号 京ICP备14061128号 京公网安备11010802020026号 网络文化经营许可证京网文[2016]1631-199 增值电信业务经营许可证：京B2-20200543</div>
+        </div>
+    </div>
 </body>
 
 </html>
